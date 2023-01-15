@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+}
+body{
+    background-color: #000;
+    color: #fff;
+}
+.header{
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.sign-container{
+    height: 80vh;
+    width: 40%;
+    background-image: url(images/Rectangle\ \(1\).png);
+    margin: auto;
+    padding: 60px 60px;
+}
+.sign-content h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+.sign-in{
+    margin: 20px 0;
+
+}
+.sign-in > input{
+    color: #fff;
+    height: 45px;
+    width: 100%;
+    background-color: rgb(57, 57, 57);
+    border: 0;
+    outline: 0;
+    margin: 7px 0;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.sign-in > input::placeholder{
+    color: rgb(132, 132, 132);
+    font-size: 16px;
+}
+.sign-in > button{
+    height: 45px;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400px;
+    transition: all .4s;
+    cursor: pointer;
+}
+.sign-in > button:hover{
+    border: 1px solid orange;
+}
+.sign-content > input[type="checkbox"]{
+    background-color: black;
+    outline: none;
+    border: 0;
+}
+.sign-content > label{
+    color: rgb(132, 132, 132);
+    font-size: 14px;
+}
+.sign-content > a{
+    float: right;
+    text-decoration: none;
+    color: rgb(132, 132, 132);
+    font-size: 14px;
+}
+.lower{
+    margin: 35px 0;
+    display: grid;
+    gap: 15px;
+}
+.lower .login{
+    text-decoration: none;
+    color: rgb(132, 132, 132);
+    align-items: center;
+    font-size: 14px;
+}
+.lower .signup{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+.lower p{
+    margin-top: 20px;
+    color: rgb(132, 132, 132);
+    font-size: 17px;
+}
+.lower small{
+    color: rgb(132, 132, 132);
+}
+.lower small a{
+    color: blue;
+}
+
+/* --------footer------ */
+
+#footer{
+    position: absolute;
+    padding: 50px 15% 10px;
+    color: #777;
+    width: 100%;
+}
+#footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.row{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+#footer > .btn1{
+    background-color: transparent;
+    text-decoration: none;
+    color: #777;
+    padding: 8px 8px;
+    border-radius: 2px;
+    font-size: 13px;
+    border: .4px solid #777;
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+    margin-right: 10px;
+}
+#footer > h2{
+    font-size: 14px;
+}
+#footer > .btn1 img{
+    opacity: 40%;
+}
+#footer > p{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* --------media queries------- */
+
+@media only screen and (max-width:600px){
+    .logo{
+        width: 100px;
+    }
+    .sign-container{
+        margin-top: 40px;
+        position: unset;
+        width: 100%;
+        height: 70vh;
+        padding: 40px 30px;
+    }
+    .sign-in{
+        margin-top: -3px;
+    }
+    .sign-content h2{
+        font-size: 22px;
+    }
+    .sign-in > input{
+        height: 30px;
+        width: 100%;
+        background-color: rgb(57, 57, 57);
+        border: 0;
+        outline: 0;
+        margin: 3px 0;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .sign-in > input::placeholder{
+        color: rgb(132, 132, 132);
+        font-size: 10px;
+    }
+    .sign-in > button{
+        width: 100%;
+        height: 45px;
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+        background-color: red;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400px;
+    }
+    .sign-content > input[type="checkbox"]{
+        background-color: black;
+        outline: none;
+        border: 0;
+        transform: scale(.7);
+    }
+    
+    .sign-content > label{
+        color: rgb(132, 132, 132);
+        font-size: 10px;
+    }
+    .sign-content > a{
+        float: right;
+        text-decoration: none;
+        color: rgb(132, 132, 132);
+        font-size: 10px;
+    }
+    .lower{
+        margin: 25px 0;
+        display: grid;
+        gap: 10px;
+    }
+    .lower .login{
+        text-decoration: none;
+        color: rgb(132, 132, 132);
+        align-items: center;
+        font-size: 10px;
+    }
+    .lower .login img{
+        width: 15px;
+    }
+    .lower .signup{
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .lower p{
+        color: rgb(132, 132, 132);
+        font-size: 12px;
+    }
+    .lower small{
+        color: rgb(132, 132, 132);
+        font-size: 10px;
+    }
+    .lower small a{
+        color: blue;
+    }
+    #footer h2{
+        font-size: 12px;
+    }
+    #footer a{
+        font-size: 8px;
+    }
+    #footer > .btn1{
+        transform: scale(.8);
+    }
+    #footer > p{
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+/* media queriesss (max-width 768px)----------- */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 100px;
+    }
+    .sign-container{
+        margin-top: 70px;
+        position: unset;
+        width: 400px;
+        height: 60vh;
+        padding: 40px 30px;
+    }
+    .sign-in{
+        margin-top: -3px;
+    }
+    .sign-content h2{
+        font-size: 22px;
+    }
+    .sign-in > input{
+        height: 30px;
+        width: 100%;
+        background-color: rgb(57, 57, 57);
+        border: 0;
+        outline: 0;
+        margin: 3px 0;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .sign-in > input::placeholder{
+        color: rgb(132, 132, 132);
+        font-size: 10px;
+    }
+    .sign-in > button{
+        width: 100%;
+        height: 30px;
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+        background-color: red;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400px;
+    }
+    .sign-content > input[type="checkbox"]{
+        background-color: black;
+        outline: none;
+        border: 0;
+        transform: scale(.7);
+    }
+    
+    .sign-content > label{
+        color: rgb(132, 132, 132);
+        font-size: 10px;
+    }
+    .sign-content > a{
+        float: right;
+        text-decoration: none;
+        color: rgb(132, 132, 132);
+        font-size: 10px;
+    }
+    .lower{
+        margin: 25px 0;
+        display: grid;
+        gap: 10px;
+    }
+    .lower .login{
+        text-decoration: none;
+        color: rgb(132, 132, 132);
+        align-items: center;
+        font-size: 10px;
+    }
+    .lower .login img{
+        width: 15px;
+    }
+    .lower .signup{
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .lower p{
+        color: rgb(132, 132, 132);
+        font-size: 12px;
+    }
+    .lower small{
+        color: rgb(132, 132, 132);
+        width: 300px;
+        font-size: 10px;
+    }
+    .lower small a{
+        color: blue;
+    }
+    #footer h2{
+        font-size: 12px;
+    }
+    #footer a{
+        font-size: 8px;
+    }
+    #footer > .btn1{
+        transform: scale(.8);
+    }
+    #footer > p{
+        font-size: 12px;
+    }
+}
